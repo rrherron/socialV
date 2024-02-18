@@ -1,0 +1,22 @@
+<ng-container>
+    <div class="mt-3" *ngIf="postData.comment">
+        <p>{{postData.comment}}</p>
+    </div>
+    <div class="user-post">
+        <a href="javascript:void(0);" *ngIf="postData.imgLocations&&postData.imgLocations.length === 1"><img [src]="postData.imgLocations[0]" alt="post-image" class="img-fluid rounded w-100" loading="lazy"></a>
+        <div class=" d-grid grid-rows-2 grid-flow-col gap-3" *ngIf="postData.imgLocations&&postData.imgLocations.length === 3">
+            <div class="row-span-2 row-span-md-1">
+                <img [src]="postData.imgLocations[0]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+            </div>
+            <div class="row-span-1">
+                <img [src]="postData.imgLocations[1]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+            </div>
+            <div class="row-span-1 ">
+                <img [src]="postData.imgLocations[2]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+            </div>
+        </div>
+        <div class="ratio ratio-16x9" *ngIf="postData.videoLocation">
+            <iframe  src="https://www.youtube.com/embed/j_GsIanLxZk?rel=0" allowfullscreen></iframe>
+         </div>
+    </div>
+</ng-container>

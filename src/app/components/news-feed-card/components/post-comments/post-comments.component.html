@@ -1,0 +1,85 @@
+<div class="comment-area mt-3">
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+       <div class="like-block position-relative d-flex align-items-center">
+          <div class="d-flex align-items-center">
+             <div class="like-data">
+                <div class="dropdown">
+                   <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                     <img src="../assets/images/icon/01.png" class="img-fluid" alt="">
+                   </span>
+                   <div class="dropdown-menu py-2">
+                     <a class="ms-2 me-2" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Like"><img src="../assets/images/icon/01.png" class="img-fluid" alt="" loading="lazy"></a>
+                     <a class="me-2" href="#"  data-bs-toggle="tooltip" data-bs-placement="top" title="Love"><img src="../assets/images/icon/02.png" class="img-fluid" alt="" loading="lazy"></a>
+                     <a class="me-2" href="#"  data-bs-toggle="tooltip" data-bs-placement="top" title="Happy"><img src="../assets/images/icon/03.png" class="img-fluid" alt="" loading="lazy"></a>
+                     <a class="me-2" href="#"  data-bs-toggle="tooltip" data-bs-placement="top" title="HaHa"><img src="../assets/images/icon/04.png" class="img-fluid" alt="" loading="lazy"></a>
+                     <a class="me-2" href="#"  data-bs-toggle="tooltip" data-bs-placement="top" title="Think"><img src="../assets/images/icon/05.png" class="img-fluid" alt="" loading="lazy"></a>
+                     <a class="me-2" href="#"  data-bs-toggle="tooltip" data-bs-placement="top" title="Sade" ><img src="../assets/images/icon/06.png" class="img-fluid" alt="" loading="lazy"></a>
+                     <a class="me-2" href="#"  data-bs-toggle="tooltip" data-bs-placement="top" title="Lovely"><img src="../assets/images/icon/07.png" class="img-fluid" alt="" loading="lazy"></a>
+                  </div>
+                </div>
+             </div>
+             <div class="total-like-block ms-2 me-3">
+                <div class="dropdown">
+                   <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                   {{postComments.totalLikes}} Likes
+                   </span>
+                   <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#" *ngFor="let likeUser of postComments.likesUsers | slice:0:maxUserLikes">{{likeUser}}</a>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="total-comment-block">
+             <div class="dropdown">
+                <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                {{postComments.totalComments}} Comment
+                </span>
+                <div class="dropdown-menu">
+                   <a class="dropdown-item" href="#" *ngFor="let commentUser of postComments.commentsUsers | slice:0:maxUserComments">{{commentUser}}</a>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="share-block d-flex align-items-center feather-icon mt-2 mt-md-0">
+          <a (click)="shareOnClick()" href="javascript:void(0);" data-bs-toggle="offcanvas" data-bs-target="#share-btn" aria-controls="share-btn" style="text-decoration: none;" class="d-flex align-items-center">
+          <span class="material-symbols-outlined md-18">
+          share
+          </span>
+          <span class="ms-1">{{postComments.totalShares}} Share</span></a>                           
+       </div>
+    </div>
+    <hr>
+    <ul class="post-comments list-inline p-0 m-0">
+       <li class="mb-2" *ngFor="let comment of postComments.comments | slice:0:maxComments">
+          <div class="d-flex">
+             <div class="user-img">
+                <img [src]="comment.userImgLocation" alt="userimg" class="avatar-35 rounded-circle img-fluid" loading="lazy">
+             </div>
+             <div class="comment-data-block ms-3">
+                <h6>{{comment.name}}</h6>
+                <p class="mb-0">{{comment.comment}}</p>
+                <div class="d-flex flex-wrap align-items-center comment-activity">
+                   <a href="javascript:void(0);" (click)="likeOnClick()">like</a>
+                   <a href="javascript:void(0);" (click)="replyOnClick()">reply</a>
+                   <a href="javascript:void(0);" (click)="translateOnClick()">translate</a>
+                   <span> {{comment.date}} </span>
+                </div>
+             </div>
+          </div>
+       </li>
+    </ul>
+    <form class="comment-text d-flex align-items-center mt-3" action="javascript:void(0);">
+       <input type="text" class="form-control rounded" placeholder="Enter Your Comment">
+       <div class="comment-attagement d-flex">
+          <a (click)="insertLinkOnClick()" href="javascript:void(0);" style="text-decoration: none;" class="material-symbols-outlined me-3 link">
+          insert_link
+          </a>
+          <a (click)="emotOnClick()" href="javascript:void(0);" style="text-decoration: none;" class="material-symbols-outlined  me-3">
+          sentiment_satisfied
+          </a>
+          <a (click)="pictureOnClick()" href="javascript:void(0);" style="text-decoration: none;" class="material-symbols-outlined  me-3">
+          photo_camera
+          </a>
+       </div>
+    </form>
+ </div>
