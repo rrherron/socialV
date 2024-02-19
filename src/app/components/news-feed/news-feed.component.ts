@@ -18,10 +18,10 @@ export class NewsFeedComponent implements OnInit {
       post: {
         comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus',
         imgLocations: [
-          '../../../assets/images/p1.jpg',
-          '../../../assets/images/p1.jpg',
-          '../../../assets/images/p1.jpg',
-          '../../../assets/images/p3.jpg'
+          '../../../assets/images/dude1.jpg',
+          '../../../assets/images/dude2.jpg',
+          '../../../assets/images/chick1.jpg',
+          '../../../assets/images/group1.jpg'
         ]
       },
       comments: {
@@ -71,9 +71,9 @@ export class NewsFeedComponent implements OnInit {
     post: {
       comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus',
       imgLocations: [
-        '../../../assets/images/p2.jpg',
-        '../../../assets/images/p1.jpg',
-        '../../../assets/images/p3.jpg'
+        '../../../assets/images/dude1.jpg',
+          '../../../assets/images/dude2.jpg',
+          '../../../assets/images/chick1.jpg'
       ]
     },
     comments: {
@@ -123,8 +123,8 @@ export class NewsFeedComponent implements OnInit {
     post: {
       comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus',
       imgLocations: [
-        '../../../assets/images/p3.jpg',
-        '../../../assets/images/p1.jpg'
+        '../../../assets/images/dude1.jpg',
+          '../../../assets/images/dude2.jpg'
       ]
     },
     comments: {
@@ -174,7 +174,7 @@ export class NewsFeedComponent implements OnInit {
     post: {
       comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus',
       imgLocations: [
-        '../../../assets/images/p4.jpg',
+        '../../../assets/images/dude1.jpg'
       ]
     },
     comments: {
