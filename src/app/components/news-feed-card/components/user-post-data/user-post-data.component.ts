@@ -21,4 +21,20 @@ export class UserPostDataComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  savePost() {
+    console.log('savePost');
+  }
+
+  hidePost() {
+    console.log('hidePost');
+  }
+
+  unfollowUser() {
+    console.log('unfollowUser');
+  }
+
+  notifications() {
+    console.log('notifications');
+  }
+
 }
