@@ -22,6 +22,28 @@ export class NewsFeedComponent implements OnInit {
           '../../../assets/images/dude2.jpg',
           '../../../assets/images/chick1.jpg',
           '../../../assets/images/group1.jpg'
+        ],
+        images: [
+          {
+            src: '../../../assets/images/dude1.jpg',
+            caption: 'dude 1',
+            thumb: '../../../assets/images/dude1.jpg',
+          },
+          {
+            src: '../../../assets/images/dude2.jpg',
+            caption: 'dude 2',
+            thumb: '../../../assets/images/dude2.jpg',
+          },
+          {
+            src: '../../../assets/images/chick1.jpg',
+            caption: 'chick 1',
+            thumb: '../../../assets/images/chick1.jpg',
+          },
+          {
+            src: '../../../assets/images/group1.jpg',
+            caption: 'group 1',
+            thumb: '../../../assets/images/group1.jpg',
+          },
         ]
       },
       comments: {
@@ -74,6 +96,23 @@ export class NewsFeedComponent implements OnInit {
         '../../../assets/images/chick1.jpg',
           '../../../assets/images/dude2.jpg',
           '../../../assets/images/chick1.jpg'
+      ],
+      images: [
+        {
+          src: '../../../assets/images/chick1.jpg',
+          caption: 'chick 1',
+          thumb: '../../../assets/images/chick1.jpg',
+        },
+        {
+          src: '../../../assets/images/dude2.jpg',
+          caption: 'dude 2',
+          thumb: '../../../assets/images/dude2.jpg',
+        },
+        {
+          src: '../../../assets/images/chick1.jpg',
+          caption: 'chick 1',
+          thumb: '../../../assets/images/chick1.jpg',
+        }
       ]
     },
     comments: {
@@ -125,6 +164,18 @@ export class NewsFeedComponent implements OnInit {
       imgLocations: [
         '../../../assets/images/dude1.jpg',
           '../../../assets/images/food.jpg'
+      ],
+      images: [
+        {
+          src: '../../../assets/images/dude1.jpg',
+          caption: 'dude 1',
+          thumb: '../../../assets/images/dude1.jpg',
+        },
+        {
+          src: '../../../assets/images/food.jpg',
+          caption: 'food',
+          thumb: '../../../assets/images/food.jpg',
+        }
       ]
     },
     comments: {
@@ -175,6 +226,13 @@ export class NewsFeedComponent implements OnInit {
       comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus',
       imgLocations: [
         '../../../assets/images/swiming.jpg'
+      ],
+      images: [
+        {
+          src: '../../../assets/images/swiming.jpg',
+          caption: 'swiming',
+          thumb: '../../../assets/images/swiming.jpg',
+        }
       ]
     },
     comments: {

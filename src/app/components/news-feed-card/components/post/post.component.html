@@ -3,42 +3,42 @@
         <p>{{postData.comment}}</p>
     </div>
     <div class="user-post">
-        <ng-container *ngIf="postData.imgLocations">
-            <ng-container [ngSwitch]="postData.imgLocations.length">
+        <ng-container *ngIf="postData.images">
+            <ng-container [ngSwitch]="postData.images.length">
                 <a href="javascript:void(0);" *ngSwitchCase="1">
-                    <img [src]="postData.imgLocations[0]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                    <img [src]="postData.images[0].thumb" (click)="open(0)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                 </a>
                 <div class=" d-grid grid-flow-col gap-3" *ngSwitchCase="2">
                     <div class="row-span-1">
-                        <img [src]="postData.imgLocations[0]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                        <img [src]="postData.images[0].thumb" (click)="open(0)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                     </div>
                     <div class="row-span-1 ">
-                        <img [src]="postData.imgLocations[1]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                        <img [src]="postData.images[1].thumb" (click)="open(1)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                     </div>
                 </div>
                 <div class=" d-grid grid-rows-2 grid-flow-col gap-3"*ngSwitchCase="3">
                     <div class="row-span-2 row-span-md-1">
-                        <img [src]="postData.imgLocations[0]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                        <img [src]="postData.images[0].thumb" (click)="open(0)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                     </div>
                     <div class="row-span-1">
-                        <img [src]="postData.imgLocations[1]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                        <img [src]="postData.images[1].thumb"  (click)="open(1)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                     </div>
                     <div class="row-span-1 ">
-                        <img [src]="postData.imgLocations[2]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                        <img [src]="postData.images[2].thumb" (click)="open(2)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                     </div>
                 </div>
                 <div class=" d-grid grid-rows-2 grid-flow-col gap-3" *ngSwitchCase="4">
                     <div class="row-span-1">
-                        <img [src]="postData.imgLocations[0]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                        <img [src]="postData.images[0].thumb" (click)="open(0)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                     </div>
                     <div class="row-span-1">
-                        <img [src]="postData.imgLocations[1]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                        <img [src]="postData.images[1].thumb" (click)="open(1)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                     </div>
                     <div class="row-span-1 ">
-                        <img [src]="postData.imgLocations[2]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                        <img [src]="postData.images[2].thumb"  (click)="open(2)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                     </div>
                     <div class="row-span-1 ">
-                        <img [src]="postData.imgLocations[3]" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
+                        <img [src]="postData.images[3].thumb"  (click)="open(3)" alt="post-image" class="img-fluid rounded w-100" loading="lazy">
                     </div>
                 </div>
                 <!-- <div class=" d-grid grid-rows-2 grid-flow-col gap-3" *ngSwitchCase="5">

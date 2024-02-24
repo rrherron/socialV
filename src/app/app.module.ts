@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserPostDataComponent } from './components/news-feed-card/components/user-post-data/user-post-data.component';
 import { PostComponent } from './components/news-feed-card/components/post/post.component';
 import { PostCommentsComponent } from './components/news-feed-card/components/post-comments/post-comments.component';
+import { LightboxModule } from 'ngx-lightbox';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PostCommentsComponent } from './components/news-feed-card/components/po
   imports: [
     BrowserModule,
     AppRoutingModule,
+    LightboxModule,
     NgbModule
   ],
   providers: [],
